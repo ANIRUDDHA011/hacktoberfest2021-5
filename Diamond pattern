@@ -1,0 +1,40 @@
+/*Write a code for Hollow Right Triangle Star Pattern:
+  ANIRUDDHA SINGH 
+  HACKTOBERFEST-2021 */
+#include <stdio.h>
+
+int main()
+{  int  n,i,j,k;
+  printf("enter row no = ");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+  {
+      for(j=1;j<=2*n-1;j++)
+      {
+          if(j>=n+1-i&&j<=n-1+i)
+          {
+             printf("*");
+          }
+          else
+          printf(" ");
+      }
+      printf("\n");
+      
+  }
+ for(i=1;i<=n;i++)
+ {
+for(j=1;j<=2*n-1;j++)
+      {
+          if(j>i&&j<=2*n-1-i)
+          {
+             printf("*");
+          }
+          else printf(" ");
+      }
+      printf("\n");
+ }     
+    return 0;
+}
+
+
+
